@@ -4,13 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.Collections;
-
-import javax.xml.datatype.Duration;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -32,7 +26,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         switch (v.getId()) {
 
             case R.id.numer_look:
-                startActivity(new Intent(this, NumberAndLetterLookActivity.class));
+                startActivity(new Intent(this, CodingLookActivity.class));
                 break;
             case R.id.number_adc_train:
                 startActivity(new Intent(this, NumberAndLetterPractiseActivity.class));

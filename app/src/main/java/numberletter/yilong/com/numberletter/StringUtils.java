@@ -37,7 +37,6 @@ public class StringUtils {
         list.add("x");
         list.add("y");
         list.add("z");
-
         return list;
     }
 
