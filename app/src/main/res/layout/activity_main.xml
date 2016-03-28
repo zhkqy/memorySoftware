@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f1"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/jiyitrain" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black_t30" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/numer_look"
+                style="@style/buttomOneStyle"
+                android:layout_marginTop="20dp"
+                android:text="数字编码查看与记忆" />
+
+            <TextView
+                android:id="@+id/number_adc_train"
+                style="@style/buttomOneStyle"
+                android:layout_marginTop="20dp"
+                android:text="数字与字母编码练习" />
+
+            <TextView
+                android:id="@+id/puke"
+                style="@style/buttomOneStyle"
+                android:layout_marginTop="20dp"
+                android:text="扑克编码练习" />
+
+            <TextView
+                android:id="@+id/erjinzhi"
+                style="@style/buttomOneStyle"
+                android:layout_marginTop="20dp"
+                android:text="二进制编码练习" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
