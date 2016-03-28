@@ -53,7 +53,7 @@ public class CodingLookModel {
         codingNickname.add("勺子");
         codingNickname.add("镰刀");
         codingNickname.add("眼睛");
-        codingNickname.add("球拍");
+        codingNickname.add("口哨");
         codingNickname.add("棒球");
 
 
