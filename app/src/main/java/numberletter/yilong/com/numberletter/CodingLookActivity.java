@@ -21,7 +21,7 @@ public class CodingLookActivity extends Activity {
         setContentView(R.layout.activity_number_look_layout);
 
         gridView = (GridView) findViewById(R.id.grid);
-        CodingLookAdapter lookAdapter = new CodingLookAdapter(new CodingLookModel());
+        CodingLookAdapter lookAdapter = new CodingLookAdapter(new CodingLookModel(),this);
         gridView.setAdapter(lookAdapter);
         lookAdapter.notifyDataSetChanged();
     }
