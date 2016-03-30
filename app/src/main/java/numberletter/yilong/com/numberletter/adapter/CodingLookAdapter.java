@@ -10,6 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import numberletter.yilong.com.numberletter.R;
+import numberletter.yilong.com.numberletter.View.MyGridView;
 import numberletter.yilong.com.numberletter.model.CodingLookModel;
 
 /**
@@ -48,6 +49,7 @@ public class CodingLookAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
+
         if (convertView == null) {
             holder = new ViewHolder();
             convertView = View.inflate(mContext, R.layout.adapter_coding_look_layout, null);
@@ -57,6 +59,12 @@ public class CodingLookAdapter extends BaseAdapter {
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
+
+//        if(parent instanceof MyGridView){
+//            if(((MyGridView) parent).isOnMeasure()){
+//                return convertView;
+//            }
+//        }
         holder.nickname.setText(codingNumber.get(position) + "  " + codingNickname.get(position));
         holder.coding_img.setBackgroundResource(codingImg.get(position));
         return convertView;

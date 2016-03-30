@@ -23,7 +23,7 @@
             android:background="@color/black_t30" />
     </RelativeLayout>
 
-    <GridView
+    <numberletter.yilong.com.numberletter.View.MyGridView
         android:id="@+id/grid"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
