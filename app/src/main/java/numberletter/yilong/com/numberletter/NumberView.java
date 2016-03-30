@@ -9,6 +9,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import numberletter.yilong.com.numberletter.dialog.NumberCodingDialog;
+
 /**
  * Created by zhkqy on 16/3/15.
  * 随机1-100数字类
@@ -19,6 +21,8 @@ public class NumberView extends FrameLayout implements View.OnClickListener {
     private TextView num;
     private TextView next;
     ArrayList<Integer> listNum = new ArrayList<Integer>();
+    int radom = 0;
+
 
     public NumberView(Context context) {
         super(context);
@@ -39,6 +43,7 @@ public class NumberView extends FrameLayout implements View.OnClickListener {
         num = (TextView) v.findViewById(R.id.num);
         next = (TextView) v.findViewById(R.id.next);
         next.setOnClickListener(this);
+        num.setOnClickListener(this);
         showNextNumber();
         addView(v);
     }
@@ -51,6 +56,10 @@ public class NumberView extends FrameLayout implements View.OnClickListener {
                 showNextNumber();
                 break;
 
+            case R.id.num:
+                NumberCodingDialog dialog = new NumberCodingDialog(mContext, radom + "");
+                dialog.show();
+                break;
             default:
                 break;
         }
@@ -68,7 +77,7 @@ public class NumberView extends FrameLayout implements View.OnClickListener {
     int currentPos = 0;
 
     public void showNextNumber() {
-        int radom = 0;
+
         if (currentPos < listNum.size() - 1) {
             radom = listNum.get(currentPos);
             currentPos++;
