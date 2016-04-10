@@ -22,6 +22,7 @@ public class NumberView extends FrameLayout implements View.OnClickListener {
     private TextView next;
     ArrayList<Integer> listNum = new ArrayList<Integer>();
     int radom = 0;
+    int w = 0;
 
 
     public NumberView(Context context) {
